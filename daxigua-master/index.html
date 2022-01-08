@@ -63,6 +63,13 @@
     </script>-->
 
     <link rel="stylesheet" type="text/css" href="style-mobile.css" />
+    <!-- 音乐播放器大小 -->
+    <style>
+        audio{
+            height:100px;
+            width:300px;
+            }
+            </style>
 
 </head>
 
@@ -71,7 +78,8 @@
 
     <div id="canvasDiv" style="width:100%;height:100%;">
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
-        <embed src="summer.mp3" autostart="true"  loop="true" hidden="true"></embed>
+        <audio autoplay="autoplay" controls="controls" loop="loop" src="summer.mp3" ></audio> 
+        <!-- <embed src="summer.mp3" autostart="true"  loop="true" hidden="true"> -->
 
         <video id="contentElement" style="display:none;position: absolute;top:0px;left: 0px;">
                 <source src="http://rmcdn.2mdn.net/Demo/vast_inspector/android.mp4"></source>
